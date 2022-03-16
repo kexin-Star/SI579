@@ -144,7 +144,7 @@ function findSynonyms(data){
     else{
         wordOutput.innerHTML += `<ul>`;
         for(const syn in data){
-            wordOutput.innerHTML += `<li>${groupedData[syl][rhy].word} <button id="save_word" type="button" class="btn btn-success" onClick="addToSavedWords('${data[syn].word}')">(Save)</button></li>`;
+            wordOutput.innerHTML += `<li>${data[syn].word} <button id="save_word" type="button" class="btn btn-success" onClick="addToSavedWords('${data[syn].word}')">(Save)</button></li>`;
         };
         wordOutput.innerHTML += `</ul>`;
     }
